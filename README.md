@@ -1,226 +1,316 @@
 # Rolebase – AI-Powered Job Board
 
-Rolebase is a modern, AI-assisted job board built with React, TypeScript, and Vite. It provides an intuitive experience for job seekers to discover opportunities, filter jobs, view detailed job descriptions, bookmark favorites, and apply quickly through a responsive and visually appealing interface.
+Rolebase is a modern AI-assisted job board application built to help job seekers discover, explore, and apply for relevant job opportunities through a clean, intuitive, and responsive interface.
 
-The project was developed using AI-assisted development tools while focusing on user experience, clean UI, responsive design, and scalable architecture.
+The platform provides advanced job search, filtering, job details, bookmarking, AI-inspired job matching, salary insights, and quick application features.
+
+This project was developed using AI-assisted development tools with a strong focus on:
+
+- User Experience (UX)
+- Responsive Design
+- Clean UI Architecture
+- Scalable Frontend Development
+- Modern Development Practices
+
+
+## Live Application
+
+**Vercel Demo:**  
+https://rolebase-job-board.vercel.app/
+
+**GitHub Repository:**  
+https://github.com/PradeepKunapareddi/RoleBase-JobBoard
+
 
 ---
 
-## Features
+# Features
 
-### Job Search
-- Search jobs by title, company, or skills
-- Instant filtering and sorting
-- Responsive search experience
 
-### Advanced Filters
-- Work Mode (Remote, Hybrid, On-site)
-- Employment Type
-- Experience Level
+## Job Search
+
+Users can search jobs based on:
+
+- Job title
+- Company name
+- Skills
+
+The search experience provides instant filtering and helps users quickly discover suitable opportunities.
+
+
+## Advanced Job Filters
+
+Users can refine job results using multiple filters:
+
+### Work Mode
+- Remote
+- Hybrid
+- On-site
+
+### Employment Type
+- Full-time
+- Part-time
+- Contract
+
+### Experience Level
+- Entry Level
+- Mid Level
+- Senior Level
+
+### Additional Filters
+
 - Industry
 - Company Size
 - Salary Range
 - Posted Date
 
-### Job Details
-- Dedicated Job Details page
+
+## Job Details
+
+Each job has a dedicated details page containing:
+
 - Complete job description
 - Required skills
 - Salary information
 - Company details
+- Employment information
 - Apply options
 
-### Company Profiles
-- Company information
+
+## Company Profiles
+
+Users can explore company information including:
+
+- Company name
 - Industry
 - Company size
-- Verified and Premium company badges
+- Verification badges
+- Premium company indicators
 
-### AI Match Score
-- AI-inspired match score displayed for every job
-- Helps users quickly identify relevant opportunities
 
-### Quick Apply
-- Apply directly from the job listing
-- Simple application workflow
+## AI Match Score
 
-### Bookmark Jobs
-- Save favorite jobs
-- Local persistence using browser storage
+The application provides an AI-inspired job compatibility score for each opportunity.
 
-### Salary Insights
-- Salary comparison dashboard
-- Job market insights
+This helps users:
 
-### Responsive Design
-- Mobile-first design
-- Tablet optimized
-- Desktop optimized
+- Identify relevant jobs faster
+- Compare opportunities easily
+- Improve job discovery experience
 
-### Modern UI
-- Clean interface
+
+## Quick Apply
+
+Users can apply quickly from:
+
+- Job listing cards
+- Job details page
+
+The simplified workflow reduces unnecessary steps during application.
+
+
+## Bookmark Jobs
+
+Users can save jobs they are interested in.
+
+Features:
+
+- Add jobs to bookmarks
+- Remove bookmarked jobs
+- View saved jobs
+- Persistent storage using browser Local Storage
+
+
+## Salary Insights
+
+The application provides salary comparison information to help users understand compensation trends and make better career decisions.
+
+
+## Responsive Design
+
+The application is optimized for:
+
+- Mobile devices
+- Tablets
+- Desktop screens
+
+The interface automatically adapts according to screen size.
+
+
+## Modern UI Experience
+
+The application includes:
+
+- Clean and professional interface
 - Smooth animations
-- Professional layout
+- Interactive components
 - Dark mode support
+- User-friendly layouts
+
 
 ---
 
-## Technology Stack
+# Technology Stack
 
-### Frontend
+
+## Frontend
+
 - React
 - TypeScript
 - Vite
 
-### Routing
+
+## Routing
+
 - TanStack Router
 
-### Styling
+
+## Styling
+
 - Tailwind CSS
 - shadcn/ui
 
-### Animations
+
+## Animations
+
 - Framer Motion
 
-### Icons
+
+## Icons
+
 - Lucide React
 
-### Validation
+
+## Validation
+
 - Zod
 
-### State Management
+
+## State Management
+
 - React Hooks
 
-### Storage
-- Local Storage
 
-### Development
+## Storage
+
+- Browser Local Storage
+
+
+## Development & Deployment
+
 - Git
 - GitHub
 - GitHub Actions
 - Vercel
 
----
-
-## Project Structure
-
-```
-src/
-├── components/
-├── routes/
-├── data/
-├── hooks/
-├── lib/
-├── styles/
-├── assets/
-└── main.tsx
-```
 
 ---
 
-## Installation
+# 📂 Project Structure
+RoleBaseJobBoard/glow-careers
 
-Clone the repository
+│
+├── src/
+│ ├── components/
+│ ├── routes/
+│ ├── data/
+│ ├── hooks/
+│ ├── lib/
+│ ├── styles/
+│ └── main.tsx
+│
+├── public/
+│
+├── .github/
+│ └── workflows/
+│ └── deploy.yml
+│
+├── package.json
+├── README.md
+└── vite.config.ts
 
-```bash
-git clone https://github.com/your-username/rolebase-job-board.git
-```
 
-Navigate to the project
 
-```bash
-cd rolebase-job-board
-```
+---
 
-Install dependencies
+# ⚙️ Installation and Setup
 
-```bash
+
+# Install Dependencies
 npm install
-```
 
-Start the development server
-
-```bash
+# Start Development Server
 npm run dev
-```
 
-Build for production
+# CI/CD Pipeline
 
-```bash
-npm run build
-```
+The project uses GitHub Actions for Continuous Integration and Continuous Deployment.
 
-Preview production build
+Workflow Process :
 
-```bash
-npm run preview
-```
+- Developer pushes code to GitHub repository
+- GitHub Actions automatically triggers the workflow
+- Required dependencies are installed
+- Application build process is executed
+- Build errors are identified before deployment
+- Successful builds are deployed to Vercel
 
----
+Workflow File Location :
 
-## CI/CD
+- .github/workflows/deploy.yml
 
-The project uses GitHub for version control and GitHub Actions for Continuous Integration and Continuous Deployment.
+# Benefits
+- Automated deployment
+- Faster development workflow
+- Reduced manual deployment process
+- Reliable production updates
 
-The deployment is automated through Vercel, ensuring every production-ready update is easily deployable.
+# Deployment
 
----
+The application is deployed using Vercel.
 
-## Deployment
+Deployment Flow:
 
-The application is deployed on Vercel.
+Developer Code
+        |
+        |
+GitHub Repository
+        |
+        |
+GitHub Actions CI/CD
+        |
+        |
+Build Verification
+        |
+        |
+Vercel Deployment
+        |
+        |
+Live Application
 
-Production URL
+# Future Enhancements
 
-```
-https://your-vercel-url.vercel.app
-```
-
----
-
-## AI-Assisted Development
-
-This project was developed with the assistance of modern AI tools to improve productivity, UI design, documentation, and development workflow.
-
-AI assistance was used for:
-
-- UI design improvements
-- Component generation
-- Routing enhancements
-- Feature implementation
-- Documentation generation
-- Code optimization
-- Development workflow
-
-All generated code was reviewed, tested, and integrated into the final application.
-
----
-
-## Future Improvements
+Planned improvements:
 
 - User Authentication
 - Employer Dashboard
 - Resume Upload
 - AI Resume Analysis
-- Job Recommendations
+- Personalized Job Recommendations
 - Email Notifications
 - Application Tracking
 - Company Reviews
-- Real Backend Integration
+- Backend API Integration
 - Database Support
-- REST API Integration
-- Cloud Storage
+- Cloud Storage Integration
 
----
+# Author
 
-## Author
-
-**Pradeep Kunapareddy**
+Pradeep Kunapareddi
 
 AI & Software Developer
 
----
-
-## License
+# License
 
 This project was developed for technical assessment and educational purposes.
+
